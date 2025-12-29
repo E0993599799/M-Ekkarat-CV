@@ -21,169 +21,176 @@
                         google: {
                             blue: '#1a73e8',
                             blueHover: '#1558b0',
-                            gray: '#f1f3f4',
+                            gray: '#f8f9fa',
                             text: '#202124',
-                            subtext: '#5f6368'
+                            subtext: '#5f6368',
+                            dark: '#174ea6'
                         }
                     },
                     boxShadow: {
-                        'soft': '0 1px 2px 0 rgba(60,64,67,0.3), 0 1px 3px 1px rgba(60,64,67,0.15)',
-                        'hover': '0 1px 3px 0 rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15)',
+                        'soft': '0 4px 20px rgba(0, 0, 0, 0.05)',
+                        'card': '0 10px 30px -10px rgba(0, 0, 0, 0.08)',
                     }
                 }
             }
         }
     </script>
     <style>
-        body { background-color: #ffffff; color: #202124; }
-        .glass-nav { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid #f1f3f4; }
+        body { background-color: #ffffff; color: #202124; -webkit-font-smoothing: antialiased; }
+        /* Glassmorphism Navbar */
+        .glass-nav { 
+            background: rgba(255, 255, 255, 0.9); 
+            backdrop-filter: blur(12px); 
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0,0,0,0.03); 
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1a73e8 0%, #174ea6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
-<body class="antialiased">
+<body class="bg-gray-50">
 
-    <nav class="glass-nav fixed w-full z-50 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center gap-3">
-                    <div class="h-9 w-9 rounded-full bg-google-blue text-white flex items-center justify-center text-lg font-bold shadow-sm">
+                    <div class="h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center text-sm font-bold shadow-md">
                         E
                     </div>
                     <div>
-                        <h1 class="text-base font-bold text-google-text leading-tight">Ekkarat Meephu</h1>
-                        <p class="text-[10px] text-google-subtext font-medium tracking-wide uppercase">PharmD & MS IT Specialist</p>
+                        <h1 class="text-sm font-bold text-gray-800 tracking-tight">Ekkarat Meephu</h1>
+                        <p class="text-[10px] text-gray-500 font-medium uppercase tracking-wider">PharmD & MS IT</p>
                     </div>
                 </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/ekkarat-meephu-2ba53314" target="_blank" 
-                       class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-google-blue text-white text-sm font-medium hover:bg-google-blueHover shadow-soft hover:shadow-hover transition-all duration-200">
-                        <i class="fab fa-linkedin"></i> <span class="hidden sm:inline">LinkedIn Profile</span>
-                    </a>
-                </div>
+                <a href="https://www.linkedin.com/in/ekkarat-meephu-2ba53314" target="_blank" 
+                   class="text-gray-400 hover:text-google-blue transition-colors duration-200">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
             </div>
         </div>
     </nav>
 
-    <header class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 text-center max-w-4xl mx-auto">
-        <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-google-blue text-xs font-semibold tracking-wide mb-6">
-            PROJECT PROPOSAL 2025
-        </div>
-        <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-google-text tracking-tight mb-6 leading-tight">
+    <header class="pt-32 pb-12 px-6 text-center max-w-3xl mx-auto">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
             Pharmaceutical Inventory <br>
-            <span class="text-google-blue">Turnaround Strategy</span>
+            <span class="gradient-text">Turnaround Strategy</span>
         </h2>
-        <p class="text-lg sm:text-xl text-google-subtext max-w-2xl mx-auto leading-relaxed font-light">
-            เปลี่ยน <strong>"Dead Stock"</strong> ให้เป็น <strong>"Cash Flow"</strong> ด้วยกลยุทธ์การบริหารจัดการคลังยาแบบ Data-Driven โดยเภสัชกรผู้เชี่ยวชาญ
+        <p class="text-sm sm:text-base text-gray-500 max-w-xl mx-auto leading-relaxed font-light mt-4">
+            กลยุทธ์การบริหารจัดการคลังยาเพื่อเปลี่ยน <strong>"Dead Stock"</strong> ให้เป็น <strong>"Cash Flow"</strong> <br class="hidden sm:block">
+            ด้วยแนวคิด Data-Driven โดยผู้เชี่ยวชาญด้านยาและเทคโนโลยี
         </p>
     </header>
 
-    <section class="max-w-6xl mx-auto px-4 mb-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div class="flex items-center p-4 rounded-xl bg-google-gray/50 border border-transparent hover:border-blue-100 transition-all">
-                <div class="h-10 w-10 rounded-full bg-white flex items-center justify-center text-google-blue shadow-sm mr-4">
-                    <i class="fas fa-user-md text-lg"></i>
+    <section class="max-w-4xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="bg-white rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 border border-gray-50">
+                <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4 text-google-blue">
+                    <i class="fas fa-dolly text-lg"></i>
                 </div>
-                <div>
-                    <h3 class="text-sm font-bold text-google-text">Doctor of Pharmacy</h3>
-                    <p class="text-xs text-google-subtext">PharmD, Naresuan University</p>
-                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">1. Clearance</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mb-3 font-medium">Audit & Return</p>
+                <p class="text-sm text-gray-600 leading-relaxed font-light">
+                    คัดแยก Dead Stock ส่งคืน Vendor เปลี่ยนเป็น Credit Note และบริหารยากลุ่ม Near-expiry ทันที
+                </p>
             </div>
-            <div class="flex items-center p-4 rounded-xl bg-google-gray/50 border border-transparent hover:border-blue-100 transition-all">
-                <div class="h-10 w-10 rounded-full bg-white flex items-center justify-center text-google-blue shadow-sm mr-4">
-                    <i class="fas fa-laptop-code text-lg"></i>
+
+            <div class="bg-white rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 border border-gray-50">
+                <div class="w-10 h-10 bg-cyan-50 rounded-xl flex items-center justify-center mb-4 text-cyan-600">
+                    <i class="fas fa-network-wired text-lg"></i>
                 </div>
-                <div>
-                    <h3 class="text-sm font-bold text-google-text">Master of IT</h3>
-                    <p class="text-xs text-google-subtext">MS IT, Mae Fah Luang University</p>
-                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">2. Outflow</h3>
+                <p class="text-xs text-gray-400 uppercase tracking-wider mb-3 font-medium">Push & Exchange</p>
+                <p class="text-sm text-gray-600 leading-relaxed font-light">
+                    ระบบ Internal Push (FEFO) กระตุ้นการใช้ภายใน และสร้างเครือข่าย B2B Exchange กับพันธมิตร
+                </p>
             </div>
-            <div class="flex items-center p-4 rounded-xl bg-google-gray/50 border border-transparent hover:border-blue-100 transition-all">
-                <div class="h-10 w-10 rounded-full bg-white flex items-center justify-center text-google-blue shadow-sm mr-4">
-                    <i class="fas fa-briefcase text-lg"></i>
+
+            <div class="bg-white rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 border border-gray-50 ring-1 ring-emerald-50">
+                <div class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 text-emerald-600">
+                    <i class="fas fa-coins text-lg"></i>
                 </div>
-                <div>
-                    <h3 class="text-sm font-bold text-google-text">12+ Years Exp.</h3>
-                    <p class="text-xs text-google-subtext">Boots, N Health, Hospital Mgmt.</p>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">3. Financial</h3>
+                <p class="text-xs text-emerald-600 uppercase tracking-wider mb-3 font-semibold">Liquidity Goal</p>
+                <p class="text-sm text-gray-600 leading-relaxed font-light">
+                    ลดต้นทุนจม (Holding Cost) และดึงกระแสเงินสดกลับเข้าระบบ (Cash Flow Recovery)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white border-t border-gray-100 py-16">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <h3 class="text-xl font-bold text-gray-900">Why Trust This Strategy?</h3>
+                <p class="text-sm text-gray-500 mt-2">Backed by 12+ years of diverse experience</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="flex gap-4 group">
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-google-blue mt-2 ring-4 ring-blue-50 group-hover:ring-blue-100 transition-all"></div>
+                        <div class="w-0.5 h-full bg-gray-100 mt-2"></div>
+                    </div>
+                    <div class="pb-6">
+                        <span class="inline-block px-2 py-1 bg-blue-50 text-google-blue text-[10px] font-bold rounded mb-1">2024 - Present</span>
+                        <h4 class="text-base font-bold text-gray-800">Boots Retail Thailand</h4>
+                        <p class="text-xs text-gray-500 mb-2 font-medium">Pharmacist & Retail Operations</p>
+                        <p class="text-sm text-gray-600 font-light leading-relaxed">
+                            บริหารจัดการยอดขายสาขาเกินเป้าหมาย (100%+ Monthly Targets) ดูแลสต็อกสินค้าหน้าร้านและคลังยาอย่างมีประสิทธิภาพ วิเคราะห์ข้อมูลการขายเพื่อแก้ปัญหา Pain Point ของลูกค้า
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 group">
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-gray-300 mt-2 ring-4 ring-gray-100 group-hover:ring-gray-200 transition-all"></div>
+                        <div class="w-0.5 h-full bg-gray-100 mt-2"></div>
+                    </div>
+                    <div class="pb-6">
+                        <span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded mb-1">2023</span>
+                        <h4 class="text-base font-bold text-gray-800">N Health (Bangkok Hospital Chiang Rai)</h4>
+                        <p class="text-xs text-gray-500 mb-2 font-medium">Branch Manager</p>
+                        <p class="text-sm text-gray-600 font-light leading-relaxed">
+                            บริหารจัดการสาขาครอบคลุมงานคลังสินค้า (Inventory), ห้องปฏิบัติการ (Lab), และ Supply Chain ลดต้นทุนการดำเนินงานและปรับปรุง Workflow การเบิกจ่ายสินค้า
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4 group">
+                    <div class="flex flex-col items-center">
+                        <div class="w-3 h-3 rounded-full bg-gray-300 mt-2 ring-4 ring-gray-100 group-hover:ring-gray-200 transition-all"></div>
+                    </div>
+                    <div>
+                        <span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded mb-1">2013 - 2022</span>
+                        <h4 class="text-base font-bold text-gray-800">Mae Fah Luang University</h4>
+                        <p class="text-xs text-gray-500 mb-2 font-medium">Lecturer & Project Manager (Hospital IS)</p>
+                        <p class="text-sm text-gray-600 font-light leading-relaxed">
+                            อาจารย์ประจำสำนักวิชาและผู้จัดการโครงการติดตั้งระบบสารสนเทศโรงพยาบาล (iMed) วิเคราะห์ข้อมูลเพื่อช่วยผู้บริหารในการตัดสินใจเชิงกลยุทธ์
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            <div class="group relative bg-white rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-gray-100 hover:-translate-y-1">
-                <div class="absolute top-0 left-0 w-full h-1 bg-google-blue rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 text-google-blue text-2xl group-hover:bg-google-blue group-hover:text-white transition-colors duration-300">
-                    <i class="fas fa-dolly"></i>
-                </div>
-                <h3 class="text-xl font-bold text-google-text mb-2">1. Inventory Clearance</h3>
-                <p class="text-xs font-semibold text-google-blue mb-4 uppercase tracking-wider">ล้างสต็อก & คืนทุน</p>
-                <ul class="space-y-3">
-                    <li class="flex items-start text-sm text-google-subtext">
-                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2 text-xs"></i>
-                        <span><strong>Audit & Return:</strong> คัดแยก Dead Stock ส่งคืน Vendor เปลี่ยนเป็น Credit Note ทันที</span>
-                    </li>
-                    <li class="flex items-start text-sm text-google-subtext">
-                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2 text-xs"></i>
-                        <span><strong>Near-expiry:</strong> บริหารยากลุ่มใกล้หมดอายุ ก่อนมูลค่าเป็นศูนย์ (Zero Value)</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="group relative bg-white rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-gray-100 hover:-translate-y-1">
-                <div class="absolute top-0 left-0 w-full h-1 bg-cyan-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div class="w-14 h-14 bg-cyan-50 rounded-2xl flex items-center justify-center mb-6 text-cyan-600 text-2xl group-hover:bg-cyan-500 group-hover:text-white transition-colors duration-300">
-                    <i class="fas fa-network-wired"></i>
-                </div>
-                <h3 class="text-xl font-bold text-google-text mb-2">2. Outflow Channels</h3>
-                <p class="text-xs font-semibold text-cyan-600 mb-4 uppercase tracking-wider">ระบายออก & แลกเปลี่ยน</p>
-                <ul class="space-y-3">
-                    <li class="flex items-start text-sm text-google-subtext">
-                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2 text-xs"></i>
-                        <span><strong>Internal Push:</strong> ใช้ระบบ FEFO จัดลำดับการจ่ายยาให้แพทย์/จนท.</span>
-                    </li>
-                    <li class="flex items-start text-sm text-google-subtext">
-                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2 text-xs"></i>
-                        <span><strong>B2B Exchange:</strong> สร้างเครือข่ายแลกเปลี่ยนยากับคลินิกพันธมิตร</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="group relative bg-white rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-gray-100 hover:-translate-y-1">
-                <div class="absolute top-0 left-0 w-full h-1 bg-emerald-500 rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center mb-6 text-emerald-600 text-2xl group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <h3 class="text-xl font-bold text-google-text mb-2">3. Financial Goal</h3>
-                <p class="text-xs font-semibold text-emerald-600 mb-4 uppercase tracking-wider">เป้าหมายการเงิน</p>
-                <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-100">
-                    <p class="text-sm text-emerald-800 font-medium">
-                        "Convert Stock to Cash Flow"
-                    </p>
-                    <p class="text-xs text-emerald-600 mt-1">
-                        ลดต้นทุนจม (Holding Cost) และป้องกันการขาดทุน 100%
-                    </p>
-                </div>
-            </div>
-
+    <footer class="bg-white py-12 text-center border-t border-gray-100">
+        <h3 class="text-lg font-bold text-gray-800 mb-6">Ready to execute?</h3>
+        <div class="flex flex-col sm:flex-row justify-center gap-3 px-6">
+            <a href="tel:0993599799" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-google-blue text-white text-sm font-medium hover:bg-google-blueHover shadow-md hover:shadow-lg transition-all duration-300">
+                <i class="fas fa-phone-alt mr-2"></i> 099-359-9799
+            </a>
+            <a href="mailto:ekkarat.mee@gmail.com" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-gray-700 border border-gray-200 text-sm font-medium hover:bg-gray-50 transition-all duration-300">
+                <i class="fas fa-envelope mr-2"></i> Email Contact
+            </a>
         </div>
-
-        <div class="mt-16 text-center">
-            <h3 class="text-2xl font-bold text-google-text mb-6">Ready to execute?</h3>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="tel:0993599799" class="px-8 py-3 rounded-full bg-google-blue text-white font-medium hover:bg-google-blueHover shadow-md transition-all">
-                    <i class="fas fa-phone-alt mr-2"></i> 099-359-9799
-                </a>
-                <a href="mailto:ekkarat.mee@gmail.com" class="px-8 py-3 rounded-full bg-white text-google-text border border-gray-200 font-medium hover:bg-gray-50 transition-all">
-                    <i class="fas fa-envelope mr-2"></i> Email Me
-                </a>
-            </div>
-            <p class="mt-8 text-xs text-google-subtext">
-                &copy; 2025 Ekkarat Meephu. All rights reserved.<br>
-                Designed with <i class="fas fa-heart text-red-400"></i> for Healthcare Innovation.
-            </p>
-        </div>
-    </main>
+        <p class="mt-8 text-[10px] text-gray-400 uppercase tracking-widest">
+            © 2025 Ekkarat Meephu
+        </p>
+    </footer>
 
 </body>
 </html>
