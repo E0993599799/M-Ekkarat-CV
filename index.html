@@ -37,12 +37,10 @@
     </script>
     <style>
         body { background-color: #ffffff; color: #202124; -webkit-font-smoothing: antialiased; }
-        /* Glassmorphism Navbar */
         .glass-nav { 
-            background: rgba(255, 255, 255, 0.9); 
+            background: rgba(255, 255, 255, 0.95); 
             backdrop-filter: blur(12px); 
-            -webkit-backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0,0,0,0.03); 
+            border-bottom: 1px solid rgba(0,0,0,0.05); 
         }
         .gradient-text {
             background: linear-gradient(135deg, #1a73e8 0%, #174ea6 100%);
@@ -51,13 +49,13 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-white">
 
     <nav class="glass-nav fixed w-full z-50 top-0 transition-all duration-300">
         <div class="max-w-4xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <div class="flex items-center gap-3">
-                    <div class="h-8 w-8 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-white flex items-center justify-center text-sm font-bold shadow-md">
+                    <div class="h-8 w-8 rounded-full bg-google-blue text-white flex items-center justify-center text-sm font-bold shadow-md">
                         E
                     </div>
                     <div>
@@ -79,16 +77,15 @@
             <span class="gradient-text">Turnaround Strategy</span>
         </h2>
         <p class="text-sm sm:text-base text-gray-500 max-w-xl mx-auto leading-relaxed font-light mt-4">
-            กลยุทธ์การบริหารจัดการคลังยาเพื่อเปลี่ยน <strong>"Dead Stock"</strong> ให้เป็น <strong>"Cash Flow"</strong> <br class="hidden sm:block">
-            ด้วยแนวคิด Data-Driven โดยผู้เชี่ยวชาญด้านยาและเทคโนโลยี
+            เปลี่ยน <strong>"Dead Stock"</strong> ให้เป็น <strong>"Cash Flow"</strong> ด้วยกลยุทธ์ Data-Driven <br class="hidden sm:block">
+            ผสานความเชี่ยวชาญด้านยาและเทคโนโลยีสารสนเทศ
         </p>
     </header>
 
-    <section class="max-w-4xl mx-auto px-6 pb-20">
+    <section class="max-w-4xl mx-auto px-6 pb-20 border-b border-gray-100">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            <div class="bg-white rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 border border-gray-50">
-                <div class="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mb-4 text-google-blue">
+            <div class="bg-gray-50 rounded-2xl p-6 hover:bg-white hover:shadow-card transition-all duration-300 border border-transparent hover:border-gray-100">
+                <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center mb-4 text-google-blue shadow-sm">
                     <i class="fas fa-dolly text-lg"></i>
                 </div>
                 <h3 class="text-lg font-bold text-gray-800 mb-2">1. Clearance</h3>
@@ -97,9 +94,8 @@
                     คัดแยก Dead Stock ส่งคืน Vendor เปลี่ยนเป็น Credit Note และบริหารยากลุ่ม Near-expiry ทันที
                 </p>
             </div>
-
-            <div class="bg-white rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 border border-gray-50">
-                <div class="w-10 h-10 bg-cyan-50 rounded-xl flex items-center justify-center mb-4 text-cyan-600">
+            <div class="bg-gray-50 rounded-2xl p-6 hover:bg-white hover:shadow-card transition-all duration-300 border border-transparent hover:border-gray-100">
+                <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center mb-4 text-cyan-600 shadow-sm">
                     <i class="fas fa-network-wired text-lg"></i>
                 </div>
                 <h3 class="text-lg font-bold text-gray-800 mb-2">2. Outflow</h3>
@@ -108,9 +104,8 @@
                     ระบบ Internal Push (FEFO) กระตุ้นการใช้ภายใน และสร้างเครือข่าย B2B Exchange กับพันธมิตร
                 </p>
             </div>
-
-            <div class="bg-white rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 border border-gray-50 ring-1 ring-emerald-50">
-                <div class="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 text-emerald-600">
+            <div class="bg-gray-50 rounded-2xl p-6 hover:bg-white hover:shadow-card transition-all duration-300 border border-transparent hover:border-gray-100">
+                <div class="w-10 h-10 bg-white rounded-xl flex items-center justify-center mb-4 text-emerald-600 shadow-sm">
                     <i class="fas fa-coins text-lg"></i>
                 </div>
                 <h3 class="text-lg font-bold text-gray-800 mb-2">3. Financial</h3>
@@ -122,75 +117,121 @@
         </div>
     </section>
 
-    <section class="bg-white border-t border-gray-100 py-16">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center mb-10">
-                <h3 class="text-xl font-bold text-gray-900">Why Trust This Strategy?</h3>
-                <p class="text-sm text-gray-500 mt-2">Backed by 12+ years of diverse experience</p>
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="flex items-center gap-3 mb-10">
+            <div class="h-8 w-1 bg-google-blue rounded-full"></div>
+            <h3 class="text-xl font-bold text-gray-900">Professional Experience</h3>
+        </div>
+
+        <div class="space-y-10 pl-2">
+            <div class="relative pl-8 border-l-2 border-gray-100 pb-2">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-google-blue"></div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                    <h4 class="text-lg font-bold text-gray-800">Boots Retail Thailand</h4>
+                    <span class="text-xs font-bold text-google-blue bg-blue-50 px-2 py-1 rounded-md">2024 - Present</span>
+                </div>
+                <p class="text-sm text-gray-500 font-medium mb-3">Pharmacist & Retail Operations</p>
+                <p class="text-sm text-gray-600 font-light leading-relaxed">
+                    บริหารจัดการยอดขายสาขาเกินเป้าหมาย (100%+ Monthly Targets) ดูแลสต็อกสินค้าหน้าร้านและคลังยาอย่างมีประสิทธิภาพ วิเคราะห์ข้อมูลการขายเพื่อแก้ปัญหา Pain Point ของลูกค้า
+                </p>
             </div>
 
-            <div class="space-y-8">
-                <div class="flex gap-4 group">
-                    <div class="flex flex-col items-center">
-                        <div class="w-3 h-3 rounded-full bg-google-blue mt-2 ring-4 ring-blue-50 group-hover:ring-blue-100 transition-all"></div>
-                        <div class="w-0.5 h-full bg-gray-100 mt-2"></div>
-                    </div>
-                    <div class="pb-6">
-                        <span class="inline-block px-2 py-1 bg-blue-50 text-google-blue text-[10px] font-bold rounded mb-1">2024 - Present</span>
-                        <h4 class="text-base font-bold text-gray-800">Boots Retail Thailand</h4>
-                        <p class="text-xs text-gray-500 mb-2 font-medium">Pharmacist & Retail Operations</p>
-                        <p class="text-sm text-gray-600 font-light leading-relaxed">
-                            บริหารจัดการยอดขายสาขาเกินเป้าหมาย (100%+ Monthly Targets) ดูแลสต็อกสินค้าหน้าร้านและคลังยาอย่างมีประสิทธิภาพ วิเคราะห์ข้อมูลการขายเพื่อแก้ปัญหา Pain Point ของลูกค้า
-                        </p>
-                    </div>
+            <div class="relative pl-8 border-l-2 border-gray-100 pb-2">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-gray-300"></div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                    <h4 class="text-lg font-bold text-gray-800">N Health (Bangkok Hospital Chiang Rai)</h4>
+                    <span class="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded-md">2023</span>
                 </div>
+                <p class="text-sm text-gray-500 font-medium mb-3">Branch Manager</p>
+                <p class="text-sm text-gray-600 font-light leading-relaxed">
+                    บริหารจัดการสาขาครอบคลุมงานคลังสินค้า (Inventory), ห้องปฏิบัติการ (Lab), และ Supply Chain ลดต้นทุนการดำเนินงานและปรับปรุง Workflow
+                </p>
+            </div>
 
-                <div class="flex gap-4 group">
-                    <div class="flex flex-col items-center">
-                        <div class="w-3 h-3 rounded-full bg-gray-300 mt-2 ring-4 ring-gray-100 group-hover:ring-gray-200 transition-all"></div>
-                        <div class="w-0.5 h-full bg-gray-100 mt-2"></div>
-                    </div>
-                    <div class="pb-6">
-                        <span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded mb-1">2023</span>
-                        <h4 class="text-base font-bold text-gray-800">N Health (Bangkok Hospital Chiang Rai)</h4>
-                        <p class="text-xs text-gray-500 mb-2 font-medium">Branch Manager</p>
-                        <p class="text-sm text-gray-600 font-light leading-relaxed">
-                            บริหารจัดการสาขาครอบคลุมงานคลังสินค้า (Inventory), ห้องปฏิบัติการ (Lab), และ Supply Chain ลดต้นทุนการดำเนินงานและปรับปรุง Workflow การเบิกจ่ายสินค้า
-                        </p>
-                    </div>
+            <div class="relative pl-8 border-l-2 border-transparent">
+                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-gray-300"></div>
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                    <h4 class="text-lg font-bold text-gray-800">Mae Fah Luang University</h4>
+                    <span class="text-xs font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded-md">2013 - 2022</span>
                 </div>
+                <p class="text-sm text-gray-500 font-medium mb-3">Lecturer & Project Manager</p>
+                <p class="text-sm text-gray-600 font-light leading-relaxed">
+                    อาจารย์ประจำสำนักวิชาและผู้จัดการโครงการติดตั้งระบบสารสนเทศโรงพยาบาล (Hospital IS)
+                </p>
+            </div>
+        </div>
+    </section>
 
-                <div class="flex gap-4 group">
-                    <div class="flex flex-col items-center">
-                        <div class="w-3 h-3 rounded-full bg-gray-300 mt-2 ring-4 ring-gray-100 group-hover:ring-gray-200 transition-all"></div>
+    <section class="bg-gray-50 py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex items-center gap-3 mb-10">
+                <div class="h-8 w-1 bg-google-dark rounded-full"></div>
+                <h3 class="text-xl font-bold text-gray-900">Proven Track Record</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-hospital-alt text-google-blue text-xl"></i>
+                        <h4 class="font-bold text-gray-800">Hospital Information System (iMed)</h4>
                     </div>
-                    <div>
-                        <span class="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold rounded mb-1">2013 - 2022</span>
-                        <h4 class="text-base font-bold text-gray-800">Mae Fah Luang University</h4>
-                        <p class="text-xs text-gray-500 mb-2 font-medium">Lecturer & Project Manager (Hospital IS)</p>
-                        <p class="text-sm text-gray-600 font-light leading-relaxed">
-                            อาจารย์ประจำสำนักวิชาและผู้จัดการโครงการติดตั้งระบบสารสนเทศโรงพยาบาล (iMed) วิเคราะห์ข้อมูลเพื่อช่วยผู้บริหารในการตัดสินใจเชิงกลยุทธ์
-                        </p>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        <strong>Role: Project Manager</strong><br>
+                        ควบคุมดูแลการติดตั้งระบบสารสนเทศโรงพยาบาล (iMed Program) ศูนย์การแพทย์มหาวิทยาลัยแม่ฟ้าหลวง เชื่อมโยงระบบฐานข้อมูลและการไหลเวียนของผู้ป่วย (Patient Flow)
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-chart-pie text-google-blue text-xl"></i>
+                        <h4 class="font-bold text-gray-800">Data-Driven Decision Support</h4>
                     </div>
+                    <p class="text-sm text-gray-600 font-light leading-relaxed">
+                        <strong>Role: Analyst & Advisor</strong><br>
+                        สร้างระบบ Query และวิเคราะห์ข้อมูล (Data Analysis) เพื่อนำเสนอผู้บริหาร (Dean) สำหรับการตัดสินใจเชิงกลยุทธ์ และปรับปรุงประสิทธิภาพองค์กร
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white py-12 text-center border-t border-gray-100">
+    <section class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="flex items-center gap-3 mb-10">
+            <div class="h-8 w-1 bg-gray-400 rounded-full"></div>
+            <h3 class="text-xl font-bold text-gray-900">Education</h3>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors">
+                <div class="mt-1 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-google-blue shrink-0">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h4 class="text-base font-bold text-gray-800">Master of Science (MS)</h4>
+                    <p class="text-sm text-google-blue font-medium">Information Technology</p>
+                    <p class="text-xs text-gray-500 mt-1">Mae Fah Luang University</p>
+                    <p class="text-xs text-gray-400 mt-1">Expertise: Simulation Software, Data Analysis</p>
+                </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-colors">
+                <div class="mt-1 w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600 shrink-0">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div>
+                    <h4 class="text-base font-bold text-gray-800">Doctor of Pharmacy (PharmD)</h4>
+                    <p class="text-sm text-google-blue font-medium">Pharmaceutical Sciences</p>
+                    <p class="text-xs text-gray-500 mt-1">Naresuan University</p>
+                    <p class="text-xs text-gray-400 mt-1">Focus: Clinical Pharmacy, Patient Care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 text-center border-t border-gray-100 mt-8">
         <h3 class="text-lg font-bold text-gray-800 mb-6">Ready to execute?</h3>
         <div class="flex flex-col sm:flex-row justify-center gap-3 px-6">
             <a href="tel:0993599799" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-google-blue text-white text-sm font-medium hover:bg-google-blueHover shadow-md hover:shadow-lg transition-all duration-300">
                 <i class="fas fa-phone-alt mr-2"></i> 099-359-9799
             </a>
-            <a href="mailto:ekkarat.mee@gmail.com" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-gray-700 border border-gray-200 text-sm font-medium hover:bg-gray-50 transition-all duration-300">
-                <i class="fas fa-envelope mr-2"></i> Email Contact
-            </a>
-        </div>
-        <p class="mt-8 text-[10px] text-gray-400 uppercase tracking-widest">
-            © 2025 Ekkarat Meephu
-        </p>
-    </footer>
-
-</body>
-</html>
+            <a href="mailto:ekkarat.mee@gmail.com" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-white text-gray-700 border border-gray-200 text-sm font-medium hover:bg-gray-50 transition-all duration-30
